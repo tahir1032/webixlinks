@@ -16,7 +16,7 @@ export default function ContactPage() {
         lead="Tell us what you're building or what's not working. We'll come back within one business day with a clear plan and an honest quote—no pressure, no sales call."
       />
       <section className="py-16 md:py-24">
-        <div className="mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-2xl">
+        <div className="mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-4xl">
           <ContactForm />
         </div>
       </section>

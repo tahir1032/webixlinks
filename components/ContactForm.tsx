@@ -18,7 +18,7 @@ export function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="rounded-xl border border-zinc-200 bg-white px-6 py-10 text-center dark:border-zinc-800 dark:bg-zinc-900/30">
+      <div className="mx-auto max-w-2xl rounded-xl border border-zinc-200 bg-white px-6 py-10 text-center dark:border-zinc-800 dark:bg-zinc-900/30">
         <h2 className="text-xl font-semibold text-zinc-900 dark:text-white">Message received</h2>
         <p className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
           We&apos;ll come back to you within one business day.
@@ -29,7 +29,7 @@ export function ContactForm() {
 
   return (
     <>
-      <form className="space-y-6" noValidate onSubmit={handleSubmit}>
+      <form className="mx-auto max-w-2xl space-y-6" noValidate onSubmit={handleSubmit}>
         <div className="grid gap-6 sm:grid-cols-2">
           <div>
             <label htmlFor="name" className="mb-2 block text-sm font-medium text-zinc-700 dark:text-zinc-300">
