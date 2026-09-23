@@ -473,6 +473,6 @@ export const projectTypes = [
 
 export const contactDetails = {
   email: "hello@webixlinks.com",
-  phone: "0027263808",
+  phone: "03027263808",
   responseTime: "Typically within a few hours, Monday to Saturday",
 };
