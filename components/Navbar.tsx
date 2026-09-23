@@ -7,7 +7,8 @@ import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { Menu, X, Moon, Sun } from "lucide-react";
 import { navLinks } from "@/data/site";
-import logo from "@/public/logo/webixlinks.webp";
+import logoLight from "@/public/logo/webixlinks.webp";
+import logoDark from "@/public/logo/webixlinks-dark.webp";
 
 export function Navbar() {
   const pathname = usePathname();
@@ -28,7 +29,7 @@ export function Navbar() {
       >
         <Link className="flex shrink-0 items-center" aria-label="Webixlinks home" href="/">
           <Image
-            src={logo}
+            src={isDark ? logoDark : logoLight}
             alt="Webixlinks"
             width={160}
             height={40}

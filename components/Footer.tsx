@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { navLinks } from "@/data/site";
-import logo from "@/public/logo/webixlinks.webp";
+import logoLight from "@/public/logo/webixlinks.webp";
+import logoDark from "@/public/logo/webixlinks-dark.webp";
 
 export function Footer() {
   return (
@@ -10,7 +11,20 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <Link className="inline-block" href="/">
-              <Image src={logo} alt="Webixlinks" width={140} height={36} className="h-8 w-auto" />
+              <Image
+                src={logoLight}
+                alt="Webixlinks"
+                width={140}
+                height={36}
+                className="h-8 w-auto dark:hidden"
+              />
+              <Image
+                src={logoDark}
+                alt="Webixlinks"
+                width={140}
+                height={36}
+                className="hidden h-8 w-auto dark:block"
+              />
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-zinc-600 dark:text-zinc-500">
               Web development, CMS, CRM automation, and SEO for businesses that want measurable growth.
