@@ -13,6 +13,7 @@ export const techStack = [
   "Next.js",
   "Laravel",
   "PHP",
+  "ACF",
   "WooCommerce",
   "Shopify",
   "GoHighLevel",
@@ -43,9 +44,9 @@ export const capabilities = [
       "Content systems your team can actually use — update pages, publish posts, manage products without calling a developer.",
     bullets: [
       "WordPress builds & customisation",
+      "Custom plugin & theme development",
       "WooCommerce & eCommerce",
       "Headless CMS with Next.js",
-      "Migrations & platform moves",
     ],
   },
   {
@@ -151,6 +152,9 @@ export const services = [
       "Content management systems your team can actually use. Update pages, publish content, and manage products without needing a developer for every small change.",
     bullets: [
       "WordPress development — custom themes and page builder work",
+      "Custom plugin development and plugin customisation",
+      "Advanced Custom Fields (ACF) and custom post types",
+      "PHP-based custom functionality and theme customisation",
       "WooCommerce stores with payments, shipping, and product management",
       "Headless WordPress powering React and Next.js frontends",
       "Platform migrations — Wix, Squarespace, or legacy systems to WordPress",
