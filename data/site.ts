@@ -189,46 +189,64 @@ export const services = [
 
 export const caseStudies = [
   {
-    slug: "web-development-project",
-    icon: "code",
-    case: "01",
-    title: "[Project Name]",
-    sector: "[Industry · Web Development]",
-    metric: "[Result]",
-    metricLabel: "[What this number measures]",
-    stack: ["React", "Next.js", "Node.js"],
-    challenge:
-      "[Describe the specific business problem the client had before this project — be concrete about what was broken or missing.]",
-    solution:
-      "[Describe what you built and why — two to four sentences on the approach and outcome.]",
-  },
-  {
-    slug: "cms-wordpress-project",
+    slug: "eosis-recovery",
     icon: "layout-dashboard",
-    case: "02",
-    title: "[Project Name]",
-    sector: "[Industry · CMS / WordPress]",
-    metric: "[Result]",
-    metricLabel: "[What this number measures]",
-    stack: ["WordPress", "WooCommerce", "PHP"],
+    case: "01",
+    title: "EOSIS Recovery",
+    sector: "Healthcare · Addiction & Mental Health Treatment",
+    metric: "15+ Locations",
+    metricLabel: "treatment facilities managed on one platform",
+    stack: ["WordPress", "PHP", "ACF", "Custom Post Types"],
+    url: "https://eosisrecovery.com",
     challenge:
-      "[Describe the specific business problem the client had before this project — be concrete about what was broken or missing.]",
+      "EOSIS operates addiction and mental health treatment facilities across Minnesota and needed to manage content for 15+ locations, insurance information, and clinical staff credentials without duplicating work across dozens of near-identical pages.",
     solution:
-      "[Describe what you built and why — two to four sentences on the approach and outcome.]",
+      "We built a custom WordPress platform using Advanced Custom Fields and custom post types to structure facility data, treatment programs, and staff profiles as reusable content — letting the EOSIS team publish new locations and update program details without touching code.",
   },
   {
-    slug: "crm-automation-project",
-    icon: "workflow",
-    case: "03",
-    title: "[Project Name]",
-    sector: "[Industry · CRM & Automation]",
-    metric: "[Result]",
-    metricLabel: "[What this number measures]",
-    stack: ["GoHighLevel", "Zapier", "HubSpot"],
+    slug: "lazat",
+    icon: "shopping-cart",
+    case: "02",
+    title: "Lazat Artisanal Kitchen",
+    sector: "Food & Beverage · Home-Cooked Meal Delivery",
+    metric: "3 Order Types",
+    metricLabel: "ready-to-eat, ready-to-cook & made-to-order",
+    stack: ["WordPress", "WooCommerce", "Elementor"],
+    url: "https://lazat.pk",
     challenge:
-      "[Describe the specific business problem the client had before this project — be concrete about what was broken or missing.]",
+      "Lazat needed an online ordering system for a home-kitchen food delivery business spanning three different order types across a full Pakistani menu, with delivery limited to a defined radius and combo packages for group orders.",
     solution:
-      "[Describe what you built and why — two to four sentences on the approach and outcome.]",
+      "We built a WooCommerce storefront on WordPress with Elementor for the marketing pages, structured around the three order types and combo packages, giving the Lazat team a catalogue they can update themselves as the menu changes.",
+  },
+  {
+    slug: "cosegic",
+    icon: "file-check",
+    case: "03",
+    title: "Cosegic",
+    sector: "Legal & Regulatory Compliance · Financial Services",
+    metric: "1,000+ Firms",
+    metricLabel: "financial firms served globally, per Cosegic",
+    stack: ["WordPress", "Elementor"],
+    url: "https://www.cosegic.com",
+    challenge:
+      "Cosegic needed a credible, content-heavy site to present a wide range of regulatory compliance services — FCA and SEC authorisations, cryptoasset registration, financial crime prevention — to financial firms worldwide, backed by a resource library and team pages that build trust with a technical, risk-conscious audience.",
+    solution:
+      "We built a structured WordPress site on Elementor organised around service categories and target sectors, with a resource library, team pages, and consultation forms designed to move visitors from research to a booked call.",
+  },
+  {
+    slug: "jude-academy",
+    icon: "graduation-cap",
+    case: "04",
+    title: "Jude Academy",
+    sector: "Education · Online Course Sales",
+    metric: "156+ Nationalities",
+    metricLabel: "students served, per Jude Academy",
+    stack: ["WordPress", "WooCommerce", "TutorLMS"],
+    url: "https://judeacademy.com",
+    challenge:
+      "Jude Academy needed to sell structured, accredited Arabic-language courses online with proper course delivery, progress tracking, and certification — not just a page describing classes.",
+    solution:
+      "We built the platform on WordPress with TutorLMS for course delivery and progress tracking and WooCommerce for checkout, giving Jude Academy a full path from course discovery to purchase to completion certificate.",
   },
 ];
 

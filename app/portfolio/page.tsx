@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ArrowUpRight } from "lucide-react";
 import { PageHeader } from "@/components/Section";
 import { IconMark } from "@/components/IconMark";
 import { caseStudies } from "@/data/site";
@@ -36,6 +37,17 @@ export default function PortfolioPage() {
                     <p className="mt-2 font-mono text-xs uppercase tracking-wider text-zinc-600 dark:text-zinc-500">
                       {study.sector}
                     </p>
+                    {study.url ? (
+                      <a
+                        href={study.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-red-500 transition-colors hover:text-red-600 dark:text-red-400 dark:hover:text-red-300"
+                      >
+                        Visit site
+                        <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
+                      </a>
+                    ) : null}
                     <div className="mt-6 rounded-lg border border-red-500/20 bg-red-500/5 px-4 py-3">
                       <p className="text-2xl font-semibold text-red-500 dark:text-red-400">
                         {study.metric}

@@ -23,6 +23,8 @@ import {
   LayoutDashboard,
   MessageSquare,
   FileCheck,
+  ShoppingCart,
+  GraduationCap,
   type LucideIcon,
 } from "lucide-react";
 
@@ -51,6 +53,8 @@ const icons: Record<string, LucideIcon> = {
   "layout-dashboard": LayoutDashboard,
   "message-square": MessageSquare,
   "file-check": FileCheck,
+  "shopping-cart": ShoppingCart,
+  "graduation-cap": GraduationCap,
 };
 
 const sizes = {
