@@ -4,14 +4,14 @@ import { capabilities } from "@/data/site";
 
 export function CapabilityMatrix() {
   return (
-    <section className="py-16 md:py-24">
-      <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+    <section id="capabilities" className="scroll-mt-24 py-16 md:py-24">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8">
         <SectionIntro
-          eyebrow="Core Capabilities"
-          title="The Capability Matrix"
-          lead="Three engineering pillars that power every engagement—from autonomous AI to hardened cloud infrastructure."
+          eyebrow="What We Do"
+          title="Four services. One team."
+          lead="Everything your business needs to get found online, look credible, and convert—built and managed under one roof."
         />
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2">
           {capabilities.map((cap) => (
             <div
               key={cap.title}

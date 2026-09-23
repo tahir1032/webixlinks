@@ -17,6 +17,12 @@ import {
   Zap,
   Lock,
   Eye,
+  Code,
+  Workflow,
+  TrendingUp,
+  LayoutDashboard,
+  MessageSquare,
+  FileCheck,
   type LucideIcon,
 } from "lucide-react";
 
@@ -39,6 +45,12 @@ const icons: Record<string, LucideIcon> = {
   zap: Zap,
   lock: Lock,
   eye: Eye,
+  code: Code,
+  workflow: Workflow,
+  "trending-up": TrendingUp,
+  "layout-dashboard": LayoutDashboard,
+  "message-square": MessageSquare,
+  "file-check": FileCheck,
 };
 
 const sizes = {

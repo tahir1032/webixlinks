@@ -8,52 +8,68 @@ export const navLinks = [
 ];
 
 export const techStack = [
+  "WordPress",
   "React",
-  "Node.js",
-  "NestJS",
-  "Angular",
+  "Next.js",
+  "Laravel",
   "PHP",
-  "Python",
-  "MongoDB",
-  "PostgreSQL",
-  "AWS",
-  "GCP",
-  "Azure",
-  "OpenAI / LLMs",
+  "WooCommerce",
+  "Shopify",
+  "GoHighLevel",
+  "HubSpot",
+  "Zapier",
+  "Node.js",
+  "MySQL",
+  "Figma",
+  "Google Analytics",
 ];
 
 export const capabilities = [
   {
-    icon: "brain",
-    title: "GenAI & Agentic Workflows",
-    description: "Autonomous systems that reason, plan, and execute across your enterprise stack.",
+    icon: "code",
+    title: "Web Development",
+    description: "Fast, secure, conversion-focused websites built to your business — not dropped onto a template.",
     bullets: [
-      "Autonomous goal-driven agents",
-      "Proprietary LLM tuning & evaluation",
-      "Custom RAG pipelines",
-      "Vector database engineering",
+      "Custom website development",
+      "Frontend — React & Next.js",
+      "Backend — PHP & Laravel",
+      "Speed & Core Web Vitals",
     ],
   },
   {
     icon: "layers",
-    title: "Full-Stack & Mobile Engineering",
-    description: "Production-grade applications engineered for scale, security, and maintainability.",
+    title: "CMS Development",
+    description:
+      "Content systems your team can actually use — update pages, publish posts, manage products without calling a developer.",
     bullets: [
-      "MERN & MEAN architectures",
-      "Secure NestJS microservices",
-      "Enterprise PHP modernization",
-      "Cross-platform native mobile",
+      "WordPress builds & customisation",
+      "WooCommerce & eCommerce",
+      "Headless CMS with Next.js",
+      "Migrations & platform moves",
     ],
   },
   {
-    icon: "shield",
-    title: "Cloud DevOps & Security",
-    description: "Multi-cloud infrastructure with rigorous isolation and audit-ready boundaries.",
+    icon: "workflow",
+    title: "CRM & Automation",
+    description:
+      "Sales systems that follow up instantly, book appointments, and collect payments while you sleep.",
     bullets: [
-      "AWS S3 private modules, EC2, CloudFront",
-      "GCP & Azure multi-region deploys",
-      "System auditing & hardening",
-      "Isolated data boundaries",
+      "GoHighLevel setup & funnels",
+      "Email & SMS automation",
+      "Pipelines & lead management",
+      "HubSpot, Zapier & Mailchimp",
+    ],
+  },
+  {
+    icon: "trending-up",
+    title: "SEO & Content",
+    description:
+      "Technical SEO, content strategy, and authority building that moves you up Google and keeps you there.",
+    bullets: [
+      "Technical SEO audits & fixes",
+      "On-page & content optimisation",
+      "Guest posting & link building",
+      "Local SEO & Google Business",
     ],
   },
 ];
@@ -61,294 +77,297 @@ export const capabilities = [
 export const blueprint = [
   {
     icon: "compass",
-    title: "Architectural Discovery & Spec Definition",
+    title: "Discovery & Strategy",
     description:
-      "We map system boundaries, data flows, threat models, and success metrics into a signed technical specification before implementation begins.",
+      "We start with your business, not your website. Goals, audience, competitors, and what success actually looks like — then a clear proposal with fixed scope, timeline, and price before any work begins.",
   },
   {
     icon: "sparkles",
-    title: "Rapid Component Prototyping & Schema Design",
+    title: "Design & Prototype",
     description:
-      "High-fidelity prototypes and database schemas are validated against real workloads—eliminating architectural surprises in production.",
+      "Wireframes and high-fidelity designs in Figma, reviewed with you before development starts. You see and approve the finished look while changes are still cheap and quick.",
   },
   {
     icon: "server",
-    title: "Cloud Infrastructure Hardening & Multi-Region Deploy",
+    title: "Build & Integrate",
     description:
-      "IAM policies, isolated environments, CI/CD pipelines, and multi-region failover are configured with infrastructure-as-code discipline.",
+      "Clean, fast development with regular check-ins. Your CMS, CRM, payment systems, and third-party tools are connected and tested — not bolted on afterwards.",
   },
   {
     icon: "rocket",
-    title: "Continuous Evaluation & Agentic Optimization",
+    title: "Launch & Grow",
     description:
-      "Post-launch telemetry, LLM evaluation harnesses, and performance regression gates keep systems improving under production load.",
+      "We handle deployment, speed testing, and SEO setup. Then we stay on — monitoring performance, running campaigns, and improving what the data tells us to improve.",
   },
 ];
 
 export const security = [
   {
     icon: "gauge",
-    title: "Automated Rate-Limiting",
+    title: "Speed That Converts",
     description:
-      "Edge and application-layer throttling protect APIs from abuse, credential stuffing, and burst traffic without degrading legitimate users.",
+      "Every site we build is optimised for Core Web Vitals and mobile performance. Faster pages mean lower bounce rates, better Google rankings, and more enquiries from the traffic you already have.",
   },
   {
     icon: "shield",
-    title: "Strict Data Isolation Boundaries",
+    title: "Security & Maintenance Included",
     description:
-      "Tenant-scoped storage, row-level access controls, and environment separation ensure no cross-client data leakage at rest or in transit.",
+      "SSL, backups, updates, and security hardening as standard — plus ongoing maintenance so your site stays fast and protected long after launch.",
   },
   {
-    icon: "key",
-    title: "Secure Tokenization",
+    icon: "message-square",
+    title: "One Team, One Point of Contact",
     description:
-      "Short-lived JWTs, rotated API keys, and vault-backed secrets replace hardcoded credentials across every service boundary.",
+      "Design, development, CRM, and SEO handled by the same team. No handoffs between agencies, no finger-pointing when something breaks, no repeating yourself to three different people.",
   },
   {
-    icon: "git-branch",
-    title: "Pre-commit Husky Code Security",
+    icon: "file-check",
+    title: "Fixed Pricing, No Surprises",
     description:
-      "Git hooks enforce linting, secret scanning, and dependency audits before code reaches shared branches or production pipelines.",
+      "You get a clear proposal with full scope, timeline, and cost before we begin. No hourly creep, no mid-project invoices you didn't expect.",
   },
 ];
 
 export const services = [
   {
-    icon: "sparkles",
-    number: "01",
-    title: "Generative AI & LLMs",
-    description:
-      "Architecting autonomous agent networks and semantic retrieval pipelines using state-of-the-art open-source and proprietary foundation models.",
-    bullets: [
-      "Fine-tuning models using QLoRA, LoRA, and PEFT techniques",
-      "Orchestration via LangGraph, LangChain, and LlamaIndex frameworks",
-      "Vector database engineering (Pinecone, Milvus, Qdrant, pgvector)",
-      "Advanced hybrid RAG (Retrieval-Augmented Generation) pipelines",
-      "Evaluations, safety frameworks, and model guardrails (Guardrails AI)",
-    ],
-  },
-  {
     icon: "code-xml",
-    number: "02",
-    title: "Custom Development Stacks",
+    number: "01",
+    title: "Web Development",
     description:
-      "Engineering production-grade backend APIs, microservices architectures, and full-stack web platforms optimized for high throughput and sub-second latency.",
+      "Custom websites and web applications built for performance, security, and conversion — engineered around your business goals rather than a template's limitations.",
     bullets: [
-      "Modular NestJS architectures with strict dependency injection",
-      "MERN (MongoDB, Express, React, Node.js) & MEAN (Angular) stacks",
-      "Modernizing legacy PHP and monolithic systems into TypeScript microservices",
-      "High-performance RESTful, GraphQL, and gRPC API designs",
-      "Transactional schema designs (PostgreSQL RLS, MongoDB atomic sessions)",
+      "Custom website design and development from scratch",
+      "Frontend development with React and Next.js",
+      "Backend systems with PHP, Laravel, and Node.js",
+      "Responsive, mobile-first builds tested across every device",
+      "Speed optimisation and Core Web Vitals engineering",
     ],
   },
   {
-    icon: "palette",
-    number: "03",
-    title: "UI/UX Design Studio",
+    icon: "layout-dashboard",
+    number: "02",
+    title: "CMS Development",
     description:
-      "Designing scalable, WCAG-compliant design systems and high-fidelity interactive wireframes verified against user workflows.",
+      "Content management systems your team can actually use. Update pages, publish content, and manage products without needing a developer for every small change.",
     bullets: [
-      "Figma design system creation and cross-team token governance",
-      "WCAG 2.2 accessibility auditing and semantic HTML layouts",
-      "Complex dashboard visual designs and real-time canvas UX",
-      "Rapid interactive prototyping and low-friction user flows",
-      "Smooth micro-interactions and Framer Motion transitions",
+      "WordPress development — custom themes and page builder work",
+      "WooCommerce stores with payments, shipping, and product management",
+      "Headless WordPress powering React and Next.js frontends",
+      "Platform migrations — Wix, Squarespace, or legacy systems to WordPress",
+      "Ongoing CMS maintenance, updates, and security",
+    ],
+  },
+  {
+    icon: "workflow",
+    number: "03",
+    title: "CRM & Automation",
+    description:
+      "Sales and marketing systems that run without you. Capture leads, follow up instantly, book appointments, and collect payments — all automated, all connected.",
+    bullets: [
+      "GoHighLevel setup — funnels, pipelines, and full account configuration",
+      "Email and SMS automation sequences that nurture leads over time",
+      "Appointment booking with automated reminders and follow-ups",
+      "Payment integration, invoicing, and membership or course delivery",
+      "HubSpot, Zapier, ActiveCampaign, and Mailchimp integrations",
+    ],
+  },
+  {
+    icon: "trending-up",
+    number: "04",
+    title: "SEO & Content",
+    description:
+      "Getting found on Google takes more than keywords. We handle the technical foundations, the content that ranks, and the authority signals that keep you there.",
+    bullets: [
+      "Technical SEO audits — crawlability, indexing, speed, and schema",
+      "On-page optimisation and keyword-driven content strategy",
+      "Guest posting and link building on relevant, high-authority sites",
+      "Local SEO and Google Business Profile optimisation",
+      "Monthly reporting on rankings, traffic, and conversions",
     ],
   },
 ];
 
 export const caseStudies = [
   {
-    slug: "autonomous-lead-engine",
-    icon: "bot",
+    slug: "web-development-project",
+    icon: "code",
     case: "01",
-    title: "Autonomous Agent Networks for Automated Lead Engine",
-    sector: "B2B Sales & Revenue Operations",
-    metric: "+40%",
-    metricLabel: "operations efficiency improvement",
-    stack: ["OpenAI GPT-4", "LangGraph", "Node.js", "PostgreSQL", "Redis", "HubSpot API", "TypeScript"],
+    title: "[Project Name]",
+    sector: "[Industry · Web Development]",
+    metric: "[Result]",
+    metricLabel: "[What this number measures]",
+    stack: ["React", "Next.js", "Node.js"],
     challenge:
-      "A high-growth B2B enterprise required automation for processing 10,000+ unstructured inbound leads monthly, eliminating manual HubSpot qualification and updating CRM pipeline state without API rate-limiting bottlenecks or conversational state hallucinations.",
+      "[Describe the specific business problem the client had before this project — be concrete about what was broken or missing.]",
     solution:
-      "We engineered a hierarchical multi-agent orchestration layer using LangGraph and OpenAI GPT-4. The network coordinates role-specific agents (Planner, Researcher, and CRM Executor) bounded by strict JSON schema contracts. Redis manages transient session states, while PostgreSQL persists transactional records. Dynamic HubSpot updates are executed via idempotent webhooks, resulting in a 99.8% database sync accuracy rate.",
+      "[Describe what you built and why — two to four sentences on the approach and outcome.]",
   },
   {
-    slug: "secure-s3-delivery",
-    icon: "cloud-upload",
+    slug: "cms-wordpress-project",
+    icon: "layout-dashboard",
     case: "02",
-    title: "Secure Cloud-Native Object Delivery Architecture",
-    sector: "Media & Digital Asset Management",
-    metric: "65%",
-    metricLabel: "reduction in compute overhead",
-    stack: ["AWS S3", "CloudFront", "NestJS", "IAM Policies", "AWS SDK v3", "TypeScript", "Presigned URLs"],
+    title: "[Project Name]",
+    sector: "[Industry · CMS / WordPress]",
+    metric: "[Result]",
+    metricLabel: "[What this number measures]",
+    stack: ["WordPress", "WooCommerce", "PHP"],
     challenge:
-      "A digital asset management platform routing media payloads up to 5GB through Express application servers suffered from high network latency, memory starvation, elevated EC2 compute bills, and a lack of tenant-scoped network boundaries.",
+      "[Describe the specific business problem the client had before this project — be concrete about what was broken or missing.]",
     solution:
-      "We implemented a direct-to-S3 secure ingestion module using NestJS and the AWS SDK v3 to generate short-lived, client-specific presigned PUT URLs with a 300-second TTL. Network ingress was offloaded directly to AWS S3, while AWS CloudFront delivered content globally. Tenant-prefixed S3 keys were secured via strict IAM policies and monitored by AWS CloudTrail, reducing compute overhead and enhancing overall security.",
+      "[Describe what you built and why — two to four sentences on the approach and outcome.]",
   },
   {
-    slug: "salonx-platform",
-    icon: "calendar",
+    slug: "crm-automation-project",
+    icon: "workflow",
     case: "03",
-    title: "SalonX: Enterprise Resource & Booking Platform",
-    sector: "Beauty & Wellness SaaS",
-    metric: "10k+",
-    metricLabel: "active appointments scaled",
-    stack: ["React", "NestJS", "MongoDB", "Redis", "Docker", "Microservices", "REST & WebSockets"],
+    title: "[Project Name]",
+    sector: "[Industry · CRM & Automation]",
+    metric: "[Result]",
+    metricLabel: "[What this number measures]",
+    stack: ["GoHighLevel", "Zapier", "HubSpot"],
     challenge:
-      "An enterprise beauty SaaS franchise managing 500+ brick-and-mortar locations experienced concurrency booking locks, database write deadlocks, and stale analytics during peak marketing campaigns.",
+      "[Describe the specific business problem the client had before this project — be concrete about what was broken or missing.]",
     solution:
-      "We delivered an event-driven microservices architecture using NestJS and React. The system utilizes atomic MongoDB transactions to ensure race-free seat allocations, paired with Redis caching layers to enable sub-10ms dashboard data updates. The entire infrastructure is containerized via Docker and scales automatically to handle 50,000+ concurrent monthly reservations.",
+      "[Describe what you built and why — two to four sentences on the approach and outcome.]",
   },
 ];
 
-export const articleCategories = ["AI Engineering", "Cloud Architecture", "Backend Engineering"];
+export const articleCategories = ["Web Development", "CMS & WordPress", "CRM & Automation", "SEO"];
 
 export const articles = [
   {
-    slug: "architecting-autonomous-agent-networks",
-    title: "Architecting Autonomous Agent Networks for Complex Enterprise Workflows",
+    slug: "why-your-website-is-slow",
+    title: "Why Your Website Is Slow (And What It's Costing You)",
     description:
-      "How multi-agent collaboration, shared state management, and self-correcting logic loops enable reliable autonomous systems at enterprise scale.",
-    category: "AI Engineering",
-    date: "2026-03-12",
-    dateLabel: "March 12, 2026",
-    dateShort: "Mar 12, 2026",
-    readTime: "8 min read",
-    body: `<p>Enterprise teams are moving beyond single-shot LLM prompts toward <strong>autonomous agent networks</strong>—systems where specialized agents collaborate, delegate, and recover from failure without human intervention on every step.</p>
+      "Slow pages don't just annoy visitors — they quietly cost you rankings, conversions, and ad spend. Here's what's usually to blame and how to fix it.",
+    category: "Web Development",
+    date: "2026-08-18",
+    dateLabel: "August 18, 2026",
+    dateShort: "Aug 18, 2026",
+    readTime: "6 min read",
+    body: `<p>Most site owners find out their website is slow from a customer complaint, not from checking Google's own numbers first. By then the damage — lost enquiries, wasted ad spend, a lower ranking — has already happened quietly in the background.</p>
 
-<h2>Why single agents fail at scale</h2>
-<p>A monolithic agent handling planning, retrieval, tool execution, and validation in one context window degrades quickly. Token limits compress reasoning quality, tool outputs pollute memory, and error recovery becomes non-deterministic.</p>
+<h2>What "slow" actually costs you</h2>
+<p>Google uses Core Web Vitals — loading speed, interactivity, and visual stability — as a direct ranking factor. A slower competitor with worse content can still outrank you if their site loads faster. On top of that, every extra second of load time measurably increases bounce rate, which means you're paying for clicks that never convert.</p>
 
-<h2>Multi-agent collaboration patterns</h2>
-<p>We decompose workflows into role-bound agents:</p>
+<h2>The usual suspects</h2>
 <ul>
-<li><strong>Planner agents</strong> translate goals into directed acyclic task graphs.</li>
-<li><strong>Researcher agents</strong> retrieve and rank context from vector stores and APIs.</li>
-<li><strong>Executor agents</strong> invoke tools with strict JSON-schema contracts.</li>
-<li><strong>Critic agents</strong> validate outputs against business rules before commit.</li>
+<li><strong>Unoptimised images.</strong> A single uncompressed hero image can be heavier than the rest of the page combined.</li>
+<li><strong>Bloated plugins and page builders.</strong> Every added plugin ships its own CSS and JavaScript, whether the page needs it or not.</li>
+<li><strong>No caching or CDN.</strong> Your server rebuilds the same page from scratch for every visitor instead of serving a cached copy.</li>
+<li><strong>Render-blocking scripts.</strong> Tracking pixels and chat widgets loaded before the page content, delaying everything behind them.</li>
 </ul>
 
-<h2>State management across agents</h2>
-<p>Shared state lives outside the LLM—in PostgreSQL or Redis—with explicit versioning per workflow run. Each agent reads immutable snapshots and writes append-only events, enabling replay, audit trails, and rollback without re-inference costs.</p>
+<h2>What actually moves the needle</h2>
+<p>Image compression and modern formats (WebP/AVIF), a proper caching layer, trimming unused plugins, and loading non-critical scripts after the page renders. On a custom-built site these are handled at the architecture level rather than patched on with more plugins — which is also why custom builds tend to outperform template-based ones on the same content.</p>
 
-<pre><code>// Workflow state snapshot (simplified)
-{
-  "runId": "wf_8f2a",
-  "phase": "execution",
-  "artifacts": { "crmLeadId": "ld_4491" },
-  "agentHistory": ["planner:v2", "researcher:v1"]
-}</code></pre>
+<h2>How to check where you stand</h2>
+<p>Run your homepage through Google's PageSpeed Insights. Anything under 50 on mobile is actively hurting your rankings and conversions. A score in the 90s isn't vanity — it's the difference between a visitor waiting and a visitor leaving.</p>
 
-<h2>Self-correcting logic loops</h2>
-<p>When a critic agent rejects an output, the orchestrator routes back to the responsible agent with structured failure context—not a generic retry. This bounded loop prevents infinite hallucination cycles while preserving autonomy for recoverable errors.</p>
-
-<p>The result: agent networks that behave like disciplined engineering teams rather than improvisational chatbots.</p>`,
+<p>If your site is slow, it's rarely one thing — it's usually five small things stacked on top of each other. Fixing them is a technical SEO audit, not a redesign.</p>`,
   },
   {
-    slug: "securing-nestjs-direct-s3-uploads",
-    title: "Securing Cloud Infrastructure: Implementing Direct-to-S3 Presigned URL Components in NestJS",
+    slug: "wordpress-vs-headless",
+    title: "WordPress vs Headless: Which One Does Your Business Actually Need?",
     description:
-      "Bypass server upload bottlenecks with signed storage policies, Helmet.js hardening, and defense-in-depth API security.",
-    category: "Cloud Architecture",
-    date: "2026-02-28",
-    dateLabel: "February 28, 2026",
-    dateShort: "Feb 28, 2026",
+      "Headless CMS setups get a lot of hype. For most businesses, traditional WordPress is still the right call — here's how to tell which one you actually are.",
+    category: "CMS & WordPress",
+    date: "2026-07-30",
+    dateLabel: "July 30, 2026",
+    dateShort: "Jul 30, 2026",
     readTime: "6 min read",
-    body: `<p>Routing file uploads through application servers is an architectural anti-pattern at scale. <strong>Direct-to-S3 presigned URLs</strong> shift bandwidth to object storage while your API retains full authorization control.</p>
+    body: `<p>"Headless" gets pitched as the modern, faster way to run a website. Sometimes it is. But for a lot of businesses, a well-built traditional WordPress site does the job better, cheaper, and with less ongoing overhead.</p>
 
-<h2>The presigned URL flow</h2>
-<ol>
-<li>Client requests an upload slot from your NestJS API with file metadata.</li>
-<li>API validates auth, tenant scope, and MIME allowlists.</li>
-<li>Server returns a short-TTL presigned <code>PUT</code> URL scoped to a single object key.</li>
-<li>Client uploads directly to S3; API receives an event via SQS for post-processing.</li>
-</ol>
+<h2>What "headless" actually means</h2>
+<p>A headless setup splits the content management system from the front end that visitors see. WordPress (or another CMS) still manages your content in the backend, but a separate framework — usually React or Next.js — renders the actual pages. That separation buys speed and flexibility, at the cost of complexity.</p>
 
-<pre><code>@Post('uploads/presign')
-@UseGuards(JwtAuthGuard)
-async presign(@Body() dto: PresignDto, @User() user: AuthUser) {
-  const key = \`tenants/\${user.tenantId}/\${uuid()}\`;
-  const url = await this.s3.getSignedUrl('putObject', {
-    Bucket: process.env.ASSETS_BUCKET,
-    Key: key,
-    Expires: 300,
-    ContentType: dto.mimeType,
-  });
-  return { url, key };
-}</code></pre>
+<h2>When traditional WordPress is the right call</h2>
+<ul>
+<li>You or your team need to edit pages, add products, or publish posts without touching code.</li>
+<li>You rely on WordPress plugins for things like WooCommerce, membership systems, or booking forms.</li>
+<li>Your budget and timeline favour a proven, well-documented platform over a custom build.</li>
+</ul>
 
-<h2>Helmet.js and API hardening</h2>
-<p>Every NestJS deployment ships with Helmet for security headers, strict CORS origins, and request size limits on metadata endpoints. Upload authorization never trusts client-supplied paths—keys are server-generated exclusively.</p>
+<h2>When headless is worth the extra complexity</h2>
+<ul>
+<li>Performance is business-critical — high-traffic sites where every 100ms of load time is measured against revenue.</li>
+<li>You're publishing the same content across multiple channels: web, app, kiosk, or a separate marketing site.</li>
+<li>You have (or are hiring) the technical resource to maintain two connected systems instead of one.</li>
+</ul>
 
-<h2>CloudFront and IAM least privilege</h2>
-<p>Delivery uses CloudFront with origin access controls. IAM policies grant the application role <code>s3:PutObject</code> only on tenant prefixes, never bucket-wide wildcards. Access logs feed SIEM pipelines for compliance review.</p>`,
+<h2>The honest answer</h2>
+<p>Most small and mid-sized businesses don't have a performance problem that headless solves — they have a content and conversion problem that a well-optimised, properly caching WordPress build solves just as well, for a fraction of the ongoing maintenance cost. Headless earns its complexity at scale, not by default.</p>
+
+<p>If you're not sure which camp you're in, the questions above usually settle it in five minutes.</p>`,
   },
   {
-    slug: "modular-nestjs-vs-monolithic-express",
-    title: "Why We Choose NestJS Over Standard Express for Enterprise Backend Architectures",
+    slug: "the-follow-up-problem",
+    title: "The Follow-Up Problem: Why Most Businesses Lose Leads They Already Paid For",
     description:
-      "Dependency injection, strong typing, and modular boundaries that scale with team size and system complexity.",
-    category: "Backend Engineering",
-    date: "2026-02-14",
-    dateLabel: "February 14, 2026",
-    dateShort: "Feb 14, 2026",
-    readTime: "7 min read",
-    body: `<p>Express remains a capable HTTP layer, but enterprise backends demand structure that emerges from convention—not convention scattered across hundreds of middleware files.</p>
+      "You paid for the click, the visitor filled in the form — and then nothing happened for six hours. Here's where that lead actually goes, and how to stop losing it.",
+    category: "CRM & Automation",
+    date: "2026-07-11",
+    dateLabel: "July 11, 2026",
+    dateShort: "Jul 11, 2026",
+    readTime: "5 min read",
+    body: `<p>The most expensive lead you'll ever lose isn't the one who never filled in your form. It's the one who did — and then waited six hours for a reply while your competitor answered in six minutes.</p>
 
-<h2>Dependency injection as an architectural primitive</h2>
-<p>NestJS treats DI as a first-class concern. Services declare dependencies explicitly; testing swaps implementations without module rewiring. This eliminates the hidden global singletons that plague large Express codebases.</p>
+<h2>Where leads actually die</h2>
+<p>Response speed is the single biggest predictor of whether an inbound lead converts. Studies on lead response consistently show conversion odds drop sharply after the first five minutes, and keep falling every hour after that. Most businesses aren't losing leads to bad marketing — they're losing them to a slow or missing follow-up.</p>
 
-<h2>Strong typing end to end</h2>
-<p>DTOs with <code>class-validator</code> decorators enforce request contracts at the boundary. TypeScript interfaces propagate from controllers through services to repositories—catching integration mismatches at compile time, not in production logs.</p>
+<h2>Why manual follow-up fails</h2>
+<ul>
+<li>Forms land in an inbox nobody checks outside business hours.</li>
+<li>The person meant to follow up is on a call, in a meeting, or simply busy with something else.</li>
+<li>There's no system tracking who was contacted, when, or what happens if they don't reply.</li>
+</ul>
+<p>None of this is a discipline problem — it's a systems problem. Manual follow-up works until volume, or a busy week, breaks it.</p>
 
-<pre><code>@Module({
-  imports: [BookingModule, NotificationsModule],
-  controllers: [AppointmentsController],
-  providers: [AppointmentsService, SlotReservationService],
-})
-export class AppointmentsModule {}</code></pre>
+<h2>What automated follow-up actually looks like</h2>
+<p>An instant auto-response the moment a form is submitted. A text message within minutes, not hours. A structured email sequence that keeps nurturing a lead who isn't ready yet, instead of letting them go cold. A pipeline that shows exactly where every lead sits, so nothing silently falls through.</p>
+<p>None of this replaces a real conversation — it makes sure a real conversation actually happens, while the lead is still warm.</p>
 
-<h2>Maintainability at team scale</h2>
-<p>Feature modules map to bounded contexts. Teams ship independently behind stable module interfaces. Express projects often accrete shared utility folders that become undeletable dependency graphs—NestJS module boundaries prevent this by design.</p>
-
-<h2>Enterprise scaling patterns</h2>
-<p>Microservice extraction, GraphQL federation, and queue-based workers integrate through official NestJS packages with consistent lifecycle hooks. The framework grows with the system instead of being replaced by it.</p>
-
-<p>When architecture is the product, NestJS is the engineering substrate we trust.</p>`,
+<h2>The fix is usually smaller than it sounds</h2>
+<p>You don't need a full CRM overhaul to fix this. A properly configured automation — instant response, a short follow-up sequence, and a visible pipeline — closes most of the gap on its own. The businesses that respond fastest aren't working harder; they've just removed the point where a lead could sit and go cold.</p>`,
   },
 ];
 
 export const faqs = [
   {
-    category: "Generative AI & LLMs",
-    question: "What is an autonomous AI agent network and how does it improve operations?",
+    category: "Services",
+    question: "What services does Webixlinks offer?",
     answer:
-      "An autonomous AI agent network is a system where multiple role-specific AI agents (such as planners, researchers, executors, and critics) collaborate to execute multi-step workflows. Unlike single-shot chatbot prompts that suffer from context loss and memory degradation, agent networks operate under strict tool-calling contracts, maintain a persistent external state (using Redis or PostgreSQL), and execute self-correcting logic loops to validate outputs against business rules before committing changes.",
+      "We cover four areas: web development (custom sites, web applications, frontend and backend), CMS development (WordPress, WooCommerce, headless setups), CRM and automation (GoHighLevel, HubSpot, Zapier, email and SMS sequences), and SEO (technical audits, content, link building). Most clients start with one and add others as they grow.",
   },
   {
-    category: "Custom Development Stacks",
-    question: "Why choose NestJS over standard Express.js for enterprise backend development?",
+    category: "Process",
+    question: "How do we get started?",
     answer:
-      "We choose NestJS because it provides a highly structured, modular architecture out-of-the-box, leveraging Dependency Injection (DI) as a first-class primitive. This structure enforces clean, maintainable boundaries between modules, unlike raw Express projects that frequently suffer from messy dependency graphs. Additionally, NestJS has native integration with TypeScript and official ecosystem packages for queues, microservices, and WebSockets, making it ideal for scaling development teams.",
+      "Send us a brief through the contact form or email us directly. We'll arrange a call to understand your goals, then come back with a written proposal covering scope, timeline, and a fixed price. Nothing starts until you've approved it.",
   },
   {
-    category: "Cloud DevOps & Security",
-    question: "What are the benefits of direct-to-S3 presigned uploads in cloud architectures?",
+    category: "Timelines",
+    question: "How long does a project take?",
     answer:
-      "Direct-to-S3 uploads bypass application servers by allowing clients to ingest binary files directly into object storage. This reduces compute overhead (CPU/bandwidth) on EC2 instances or serverless containers by 60%+ and eliminates upload bottlenecks. Security is maintained by having the NestJS backend issue short-lived, tenant-scoped presigned URLs with strict IAM least-privilege policies, preventing unauthorized bucket mutations.",
+      "A standard business website is typically two to four weeks. A WooCommerce store or a more complex build runs four to eight. A full CRM setup is usually one to two weeks. SEO is ongoing — meaningful ranking movement generally takes three to six months. You get a specific timeline in your proposal, not a range.",
   },
   {
-    category: "Cloud DevOps & Security",
-    question: "How does Webixlinks ensure isolated data boundaries in multi-tenant SaaS systems?",
+    category: "Pricing",
+    question: "How does pricing work?",
     answer:
-      "We implement defense-in-depth data isolation across all stack layers. This includes tenant-scoped database schemas, row-level access controls (RLS) in PostgreSQL, tenant-prefixed S3 keys, and JWT verification inside NestJS controllers that validate the client's tenant authorization at every API boundary. This architecture ensures no cross-client data leakage at rest or in transit.",
+      "Projects are quoted at a fixed price based on scope. Ongoing work — maintenance, SEO, CRM management — runs on a monthly retainer. You'll always know the cost before work starts, and we don't bill for scope we didn't agree.",
   },
   {
-    category: "Cloud DevOps & Security",
-    question: "Which cloud platforms do you support and how do you manage deployments?",
+    category: "Working Together",
+    question: "Do you work with clients internationally?",
     answer:
-      "Webixlinks architects and deploys enterprise systems across AWS, Google Cloud Platform (GCP), and Microsoft Azure. We use Infrastructure as Code (IaC) principles with Terraform and GitHub Actions CI/CD pipelines. This ensures environment consistency, automated testing, isolated staging and production boundaries, and multi-region failover configurations.",
+      "Yes. We work remotely with clients across the US, UK, Europe, Australia, and the Middle East. Projects are managed online with regular check-ins, and we schedule calls around your time zone.",
+  },
+  {
+    category: "Support",
+    question: "What happens after launch?",
+    answer:
+      "We don't disappear. Every project includes a post-launch support period, and most clients continue with us on maintenance, SEO, or CRM management. Your site keeps getting updates, monitoring, and improvements.",
   },
 ];
 
@@ -357,41 +376,47 @@ export const pillars = [
     icon: "zap",
     title: "Performance First",
     description:
-      "We engineer for minimal overhead—optimized serverless workflows, edge caching strategies, and sub-second perceived load times. Every architectural decision is measured against real-world latency and throughput benchmarks.",
+      "Every site is built for speed — optimised assets, clean code, caching, and Core Web Vitals tuning. A fast site ranks better, converts better, and costs you less in ad spend.",
   },
   {
     icon: "lock",
-    title: "Ironclad Security",
+    title: "Secure & Maintained",
     description:
-      "Deep system audits, rate-limiting, secure object storage modules, and strict data isolation are non-negotiable. We implement Helmet.js hardening, secure API gateways, and defense-in-depth patterns across every layer.",
+      "SSL, backups, updates, and security hardening come as standard. We keep sites protected and current rather than leaving you to discover a problem the hard way.",
   },
   {
     icon: "eye",
-    title: "Accountability",
+    title: "Straight Answers",
     description:
-      "No vague promises—absolute architectural transparency. You receive clear documentation, decision logs, and honest trade-off analysis so your engineering leadership stays in control.",
+      "Clear scope, clear pricing, clear timelines — and honest advice when the cheapest option isn't the right one. You'll always know where your project stands.",
   },
 ];
 
 export const projectTypes = [
   {
-    value: "agentic-ai",
-    label: "Agentic AI / LLMs",
-    description: "Autonomous agents, RAG, and custom model pipelines",
+    value: "web-development",
+    label: "Web Development",
+    description: "New website, redesign, or web application",
   },
   {
-    value: "full-stack",
-    label: "Full-Stack App Development",
-    description: "MERN, MEAN, NestJS, and mobile applications",
+    value: "cms-development",
+    label: "CMS Development",
+    description: "WordPress, WooCommerce, or a platform migration",
   },
   {
-    value: "cloud-devops",
-    label: "Cloud Infrastructure & DevOps",
-    description: "AWS, GCP, Azure deployment and security",
+    value: "crm-automation",
+    label: "CRM & Automation",
+    description: "GoHighLevel, funnels, email and SMS automation",
   },
   {
-    value: "ui-ux",
-    label: "UI/UX Product Design",
-    description: "Design systems, wireframes, and product UX",
+    value: "seo-content",
+    label: "SEO & Content",
+    description: "Technical SEO, content strategy, link building",
   },
 ];
+
+export const contactDetails = {
+  email: "hello@webixlinks.com",
+  phone: "0027263808",
+  responseTime: "Typically within a few hours, Monday to Saturday",
+};

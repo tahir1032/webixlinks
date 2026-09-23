@@ -6,14 +6,14 @@ import logo from "@/public/logo/webixlinks.webp";
 export function Footer() {
   return (
     <footer className="border-t border-zinc-200 bg-white dark:border-zinc-800 dark:bg-black">
-      <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <Link className="inline-block" href="/">
               <Image src={logo} alt="Webixlinks" width={140} height={36} className="h-8 w-auto" />
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-zinc-600 dark:text-zinc-500">
-              Elite AI agents and enterprise cloud infrastructure for forward-thinking organizations.
+              Web development, CMS, CRM automation, and SEO for businesses that want measurable growth.
             </p>
           </div>
 
@@ -48,8 +48,8 @@ export function Footer() {
               Get in Touch
             </h3>
             <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-              Ready to architect your next system? Submit a technical brief and our engineering leads will
-              respond within one business day.
+              Ready to start? Send us a message and we&apos;ll come back within one business day with a
+              clear plan and an honest quote.
             </p>
             <Link
               href="/contact"

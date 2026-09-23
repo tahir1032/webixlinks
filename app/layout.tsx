@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Webixlinks | AI Agents & Enterprise Cloud Engineering",
+  title: "Webixlinks | Web Development, CMS, CRM & SEO",
   description:
-    "Engineering intelligent AI agents and enterprise cloud infrastructure. MERN, MEAN, NestJS, and multi-cloud systems across AWS, GCP, and Azure.",
+    "Full-service web development, CMS builds, CRM automation, and SEO. We build websites that load fast, convert visitors, and grow with your business.",
   manifest: "/manifest.json",
 };
 

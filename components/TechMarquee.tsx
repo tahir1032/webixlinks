@@ -8,7 +8,7 @@ export function TechMarquee() {
       id="tech-stack"
       className="md:py-24 scroll-mt-24 border-y border-zinc-200 bg-zinc-50/80 py-12 dark:border-zinc-800 dark:bg-zinc-950/50"
     >
-      <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8">
         <p className="mb-8 text-center font-mono text-xs uppercase tracking-widest text-zinc-500">
           Technical Stack
         </p>

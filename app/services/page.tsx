@@ -6,7 +6,7 @@ import { services } from "@/data/site";
 export const metadata: Metadata = {
   title: "Services | Webixlinks",
   description:
-    "Deep technical capabilities: Generative AI, custom development stacks, and UI/UX design studio services.",
+    "Web development, CMS builds, CRM automation, and SEO—full-service digital delivery for businesses that want measurable growth.",
 };
 
 const jsonLd = {
@@ -32,11 +32,11 @@ export default function ServicesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <PageHeader
-        title="Technical capabilities index"
-        lead="Granular engineering services across AI, full-stack development, and product design—built for production environments."
+        title="Everything we do, in detail"
+        lead="Four core services covering the full journey—from building your website to filling it with the right traffic and converting that traffic into customers."
       />
       <section className="py-16 md:py-24">
-        <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8">
           <div className="space-y-12">
             {services.map((service) => (
               <article

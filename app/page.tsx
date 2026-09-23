@@ -6,9 +6,9 @@ import { EngagementBlueprint } from "@/components/EngagementBlueprint";
 import { SecurityMatrix } from "@/components/SecurityMatrix";
 
 export const metadata: Metadata = {
-  title: "Webixlinks | AI Agents & Enterprise Cloud Engineering",
+  title: "Webixlinks | Web Development, CMS, CRM & SEO",
   description:
-    "Engineering intelligent AI agents and enterprise cloud infrastructure. MERN, MEAN, NestJS, and multi-cloud systems across AWS, GCP, and Azure.",
+    "Full-service web development, CMS builds, CRM automation, and SEO. We build websites that load fast, convert visitors, and grow with your business.",
 };
 
 const jsonLd = {
@@ -17,23 +17,23 @@ const jsonLd = {
   name: "Webixlinks",
   image: "https://webixlinks.com/logo/webixlinks.png",
   description:
-    "Engineering intelligent AI agents and enterprise cloud infrastructure. Specialized in NestJS, MERN, MEAN, and multi-cloud solutions across AWS, GCP, and Azure.",
+    "Full-service web development, CMS builds, CRM automation, and SEO. We build websites that load fast, convert visitors, and grow with your business.",
   url: "https://webixlinks.com",
   address: { "@type": "PostalAddress", addressCountry: "US" },
   sameAs: ["https://github.com/webixlinks", "https://linkedin.com/company/webixlinks"],
   knowsAbout: [
-    "Generative AI & LLMs",
-    "Autonomous AI Agent Networks",
-    "LangGraph & LangChain Orchestration",
-    "Vector Database Engineering",
-    "Hybrid RAG Pipelines",
-    "NestJS Framework Architecture",
-    "MERN & MEAN Stack Development",
-    "Microservices & Event-Driven Architecture",
-    "AWS, GCP, & Microsoft Azure Multi-Cloud Engineering",
-    "Direct-to-S3 Presigned Upload Architectures",
-    "Data Isolation & Multi-Tenant SaaS Security",
-    "Figma Design Systems & WCAG 2.2 Accessibility",
+    "Web Development",
+    "WordPress Development",
+    "WooCommerce & eCommerce Development",
+    "Headless CMS Architecture",
+    "React & Next.js Development",
+    "PHP & Laravel Development",
+    "GoHighLevel CRM Implementation",
+    "Marketing Automation & Email Campaigns",
+    "Technical SEO & Site Audits",
+    "Link Building & Content Strategy",
+    "Core Web Vitals & Performance Optimisation",
+    "Third-Party API Integration",
   ],
 };
 

@@ -5,11 +5,11 @@ import { blueprint } from "@/data/site";
 export function EngagementBlueprint() {
   return (
     <section className="py-16 md:py-24 border-t border-zinc-200 bg-zinc-50/50 dark:border-zinc-800 dark:bg-zinc-950/30">
-      <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8">
         <SectionIntro
-          eyebrow="Execution Model"
-          title="The Engagement Blueprint"
-          lead="A disciplined four-phase path from architectural discovery to continuous agentic optimization—designed for CTOs who need predictable delivery."
+          eyebrow="How We Work"
+          title="A process you can plan around"
+          lead="Four clear stages from first conversation to ongoing growth—with fixed scope, fixed pricing, and no surprises along the way."
         />
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {blueprint.map((phase, i) => (

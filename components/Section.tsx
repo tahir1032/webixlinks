@@ -27,7 +27,7 @@ export function SectionIntro({
 export function PageHeader({ title, lead }: { title: string; lead: string }) {
   return (
     <div className="border-b border-zinc-200 bg-zinc-50/80 dark:border-zinc-800 dark:bg-zinc-950/50">
-      <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 py-16 md:py-20">
         <p className="mb-3 font-mono text-xs uppercase tracking-widest text-red-400">Webixlinks</p>
         <h1 className="max-w-3xl text-3xl font-semibold tracking-tight text-zinc-900 dark:text-white md:text-4xl lg:text-5xl">
           {title}

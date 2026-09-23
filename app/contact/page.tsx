@@ -4,15 +4,16 @@ import { ContactForm } from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact | Webixlinks",
-  description: "Book a technical consultation with Webixlinks engineering leads.",
+  description:
+    "Tell us about your project and we'll come back within one business day with a clear plan and an honest quote.",
 };
 
 export default function ContactPage() {
   return (
     <main className="flex-1 pt-16">
       <PageHeader
-        title="Technical consultation"
-        lead="Share your architecture requirements. Our engineering leads work directly with CTOs and founders on high-stakes systems."
+        title="Let's talk about your project"
+        lead="Tell us what you're building or what's not working. We'll come back within one business day with a clear plan and an honest quote—no pressure, no sales call."
       />
       <section className="py-16 md:py-24">
         <div className="mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-2xl">

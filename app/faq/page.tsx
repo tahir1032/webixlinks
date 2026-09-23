@@ -4,9 +4,8 @@ import { FaqAccordion } from "@/components/FaqAccordion";
 import { faqs } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Frequently Asked Questions | Webixlinks",
-  description:
-    "Direct technical answers on AI agents, NestJS backend architecture, multi-cloud setups, and data isolation strategies.",
+  title: "FAQ | Webixlinks",
+  description: "Common questions about working with Webixlinks—services, timelines, pricing, and process.",
 };
 
 const jsonLd = {
@@ -27,11 +26,11 @@ export default function FaqPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <PageHeader
-        title="Technical specifications index"
-        lead="Granular Q&A regarding our execution models, frameworks, and system compliance baselines—frequently reviewed by engineering teams."
+        title="Questions, answered"
+        lead="The things clients ask most often, answered straight—no vague sales language."
       />
       <section className="py-16 md:py-24">
-        <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
             <FaqAccordion />
           </div>

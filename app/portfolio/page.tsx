@@ -4,20 +4,20 @@ import { IconMark } from "@/components/IconMark";
 import { caseStudies } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Portfolio | Webixlinks",
+  title: "Our Work | Webixlinks",
   description:
-    "Engineering case studies in autonomous AI, secure cloud delivery, and enterprise booking platforms.",
+    "Real projects, real results—websites, CMS platforms, CRM systems, and SEO campaigns delivered for clients worldwide.",
 };
 
 export default function PortfolioPage() {
   return (
     <main className="flex-1 pt-16">
       <PageHeader
-        title="Engineering case studies"
-        lead="Production systems we've architected—documented with the technical depth your engineering team expects."
+        title="Work that speaks for itself"
+        lead="A selection of projects across web development, CMS, CRM, and SEO—with the problem, the approach, and the outcome for each."
       />
       <section className="py-16 md:py-24">
-        <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8">
           <div className="grid gap-8 lg:grid-cols-1">
             {caseStudies.map((study) => (
               <article
@@ -69,7 +69,7 @@ export default function PortfolioPage() {
                     </div>
                     <div>
                       <h3 className="text-sm font-semibold text-zinc-900 dark:text-white">
-                        The Architectural Solution
+                        What We Did
                       </h3>
                       <p className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
                         {study.solution}
