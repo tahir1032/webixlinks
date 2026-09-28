@@ -32,7 +32,7 @@ const jsonLd = {
     "Marketing Automation & Email Campaigns",
     "Technical SEO & Site Audits",
     "Link Building & Content Strategy",
-    "Core Web Vitals & Performance Optimisation",
+    "Core Web Vitals & Performance Optimization",
     "Third-Party API Integration",
   ],
 };

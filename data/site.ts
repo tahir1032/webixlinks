@@ -43,7 +43,7 @@ export const capabilities = [
     description:
       "Content systems your team can actually use — update pages, publish posts, manage products without calling a developer.",
     bullets: [
-      "WordPress builds & Customization",
+      "WordPress builds & customization",
       "Custom plugin & theme development",
       "WooCommerce & eCommerce",
       "Headless CMS with Next.js",
@@ -68,7 +68,7 @@ export const capabilities = [
       "Technical SEO, content strategy, and authority building that moves you up Google and keeps you there.",
     bullets: [
       "Technical SEO audits & fixes",
-      "On-page & content optimisation",
+      "On-page & content optimization",
       "Guest posting & link building",
       "Local SEO & Google Business",
     ],
@@ -107,7 +107,7 @@ export const security = [
     icon: "gauge",
     title: "Speed That Converts",
     description:
-      "Every site we build is optimised for Core Web Vitals and mobile performance. Faster pages mean lower bounce rates, better Google rankings, and more enquiries from the traffic you already have.",
+      "Every site we build is optimized for Core Web Vitals and mobile performance. Faster pages mean lower bounce rates, better Google rankings, and more enquiries from the traffic you already have.",
   },
   {
     icon: "shield",
@@ -141,7 +141,7 @@ export const services = [
       "Frontend development with React and Next.js",
       "Backend systems with PHP, Laravel, and Node.js",
       "Responsive, mobile-first builds tested across every device",
-      "Speed optimisation and Core Web Vitals engineering",
+      "Speed optimization and Core Web Vitals engineering",
     ],
   },
   {
@@ -152,9 +152,9 @@ export const services = [
       "Content management systems your team can actually use. Update pages, publish content, and manage products without needing a developer for every small change.",
     bullets: [
       "WordPress development — custom themes and page builder work",
-      "Custom plugin development and plugin Customization",
+      "Custom plugin development and plugin customization",
       "Advanced Custom Fields (ACF) and custom post types",
-      "PHP-based custom functionality and theme Customization",
+      "PHP-based custom functionality and theme customization",
       "WooCommerce stores with payments, shipping, and product management",
       "Headless WordPress powering React and Next.js frontends",
       "Platform migrations — Wix, Squarespace, or legacy systems to WordPress",
@@ -183,9 +183,9 @@ export const services = [
       "Getting found on Google takes more than keywords. We handle the technical foundations, the content that ranks, and the authority signals that keep you there.",
     bullets: [
       "Technical SEO audits — crawlability, indexing, speed, and schema",
-      "On-page optimisation and keyword-driven content strategy",
+      "On-page optimization and keyword-driven content strategy",
       "Guest posting and link building on relevant, high-authority sites",
-      "Local SEO and Google Business Profile optimisation",
+      "Local SEO and Google Business Profile optimization",
       "Monthly reporting on rankings, traffic, and conversions",
     ],
   },
@@ -237,7 +237,7 @@ export const caseStudies = [
     challenge:
       "Lazat needed an online ordering system for a home-kitchen food delivery business spanning three different order types across a full Pakistani menu, with delivery limited to a defined radius and combo packages for group orders.",
     solution:
-      "We built a WooCommerce storefront on WordPress with Elementor for the marketing pages, structured around the three order types and combo packages, giving the Lazat team a catalogue they can update themselves as the menu changes.",
+      "We built a WooCommerce storefront on WordPress with Elementor for the marketing pages, structured around the three order types and combo packages, giving the Lazat team a catalog they can update themselves as the menu changes.",
   },
   {
     slug: "cosegic",
@@ -258,9 +258,9 @@ export const caseStudies = [
     ],
     url: "https://www.cosegic.com",
     challenge:
-      "Cosegic needed a credible, content-heavy site to present a wide range of regulatory compliance services — FCA and SEC authorisations, cryptoasset registration, financial crime prevention — to financial firms worldwide, backed by a resource library and team pages that build trust with a technical, risk-conscious audience.",
+      "Cosegic needed a credible, content-heavy site to present a wide range of regulatory compliance services — FCA and SEC authorizations, cryptoasset registration, financial crime prevention — to financial firms worldwide, backed by a resource library and team pages that build trust with a technical, risk-conscious audience.",
     solution:
-      "We built a structured WordPress site on Elementor organised around service categories and target sectors, with a resource library, team pages, and consultation forms designed to move visitors from research to a booked call.",
+      "We built a structured WordPress site on Elementor organized around service categories and target sectors, with a resource library, team pages, and consultation forms designed to move visitors from research to a booked call.",
   },
   {
     slug: "jude-academy",
@@ -308,7 +308,7 @@ export const articles = [
 
 <h2>The usual suspects</h2>
 <ul>
-<li><strong>Unoptimised images.</strong> A single uncompressed hero image can be heavier than the rest of the page combined.</li>
+<li><strong>Unoptimized images.</strong> A single uncompressed hero image can be heavier than the rest of the page combined.</li>
 <li><strong>Bloated plugins and page builders.</strong> Every added plugin ships its own CSS and JavaScript, whether the page needs it or not.</li>
 <li><strong>No caching or CDN.</strong> Your server rebuilds the same page from scratch for every visitor instead of serving a cached copy.</li>
 <li><strong>Render-blocking scripts.</strong> Tracking pixels and chat widgets loaded before the page content, delaying everything behind them.</li>
@@ -352,7 +352,7 @@ export const articles = [
 </ul>
 
 <h2>The honest answer</h2>
-<p>Most small and mid-sized businesses don't have a performance problem that headless solves — they have a content and conversion problem that a well-optimised, properly caching WordPress build solves just as well, for a fraction of the ongoing maintenance cost. Headless earns its complexity at scale, not by default.</p>
+<p>Most small and mid-sized businesses don't have a performance problem that headless solves — they have a content and conversion problem that a well-optimized, properly caching WordPress build solves just as well, for a fraction of the ongoing maintenance cost. Headless earns its complexity at scale, not by default.</p>
 
 <p>If you're not sure which camp you're in, the questions above usually settle it in five minutes.</p>`,
   },
@@ -432,7 +432,7 @@ export const pillars = [
     icon: "zap",
     title: "Performance First",
     description:
-      "Every site is built for speed — optimised assets, clean code, caching, and Core Web Vitals tuning. A fast site ranks better, converts better, and costs you less in ad spend.",
+      "Every site is built for speed — optimized assets, clean code, caching, and Core Web Vitals tuning. A fast site ranks better, converts better, and costs you less in ad spend.",
   },
   {
     icon: "lock",
