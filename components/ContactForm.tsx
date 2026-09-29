@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 import { Mail, Phone, Clock } from "lucide-react";
 import { projectTypes, contactDetails } from "@/data/site";
 
@@ -9,14 +9,29 @@ const inputClasses =
 
 export function ContactForm() {
   const [projectType, setProjectType] = useState<string | null>(null);
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSubmitted(true);
+    setStatus("sending");
+
+    const formData = new FormData(e.currentTarget);
+    const payload = Object.fromEntries(formData.entries());
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const result = await res.json();
+      setStatus(result.success ? "sent" : "error");
+    } catch {
+      setStatus("error");
+    }
   }
 
-  if (submitted) {
+  if (status === "sent") {
     return (
       <div className="mx-auto max-w-2xl rounded-xl border border-zinc-200 bg-white px-6 py-10 text-center dark:border-zinc-800 dark:bg-zinc-900/30">
         <h2 className="text-xl font-semibold text-zinc-900 dark:text-white">Message received</h2>
@@ -29,7 +44,16 @@ export function ContactForm() {
 
   return (
     <>
-      <form className="mx-auto max-w-2xl space-y-6" noValidate onSubmit={handleSubmit}>
+      <form className="mx-auto max-w-2xl space-y-6" onSubmit={handleSubmit}>
+        <input
+          type="checkbox"
+          name="botcheck"
+          className="hidden"
+          style={{ display: "none" }}
+          tabIndex={-1}
+          autoComplete="off"
+        />
+
         <div className="grid gap-6 sm:grid-cols-2">
           <div>
             <label htmlFor="name" className="mb-2 block text-sm font-medium text-zinc-700 dark:text-zinc-300">
@@ -131,11 +155,22 @@ export function ContactForm() {
           />
         </div>
 
+        {status === "error" ? (
+          <p className="rounded-lg border border-red-300 bg-red-50 px-4 py-3 text-sm leading-relaxed text-red-700 dark:border-red-900/50 dark:bg-red-950/30 dark:text-red-400">
+            Something went wrong sending your message. Please try again, or email us directly at{" "}
+            <a href={`mailto:${contactDetails.email}`} className="font-medium underline">
+              {contactDetails.email}
+            </a>
+            .
+          </p>
+        ) : null}
+
         <button
           type="submit"
+          disabled={status === "sending"}
           className="inline-flex w-full items-center justify-center gap-2 rounded-xl px-5 py-2.5 text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500/50 focus-visible:ring-offset-2 focus-visible:ring-offset-white disabled:pointer-events-none disabled:opacity-50 dark:focus-visible:ring-offset-black bg-brand-gradient text-white shadow-lg shadow-red-500/20 hover:shadow-red-500/30 hover:brightness-110 sm:w-auto"
         >
-          Send Message
+          {status === "sending" ? "Sending…" : "Send Message"}
         </button>
 
         <p className="rounded-lg border border-zinc-200 bg-zinc-50 px-4 py-3 text-sm leading-relaxed text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900/30 dark:text-zinc-500">
