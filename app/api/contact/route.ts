@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import nodemailer from "nodemailer";
 import { contactDetails, projectTypes } from "@/data/site";
 
 function escapeHtml(value: string) {
@@ -8,6 +9,58 @@ function escapeHtml(value: string) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
+}
+
+async function sendViaHostingerSmtp(subject: string, html: string, replyTo: string) {
+  const host = process.env.HOSTINGER_SMTP_HOST;
+  const port = process.env.HOSTINGER_SMTP_PORT;
+  const user = process.env.HOSTINGER_SMTP_USER;
+  const pass = process.env.HOSTINGER_SMTP_PASSWORD;
+
+  if (!host || !port || !user || !pass) {
+    throw new Error("Hostinger SMTP is not configured");
+  }
+
+  const transporter = nodemailer.createTransport({
+    host,
+    port: Number(port),
+    secure: Number(port) === 465,
+    auth: { user, pass },
+  });
+
+  await transporter.sendMail({
+    from: `Webixlinks Website <${user}>`,
+    to: contactDetails.email,
+    replyTo,
+    subject,
+    html,
+  });
+}
+
+async function sendViaResend(subject: string, html: string, replyTo: string) {
+  if (!process.env.RESEND_API_KEY) {
+    throw new Error("RESEND_API_KEY is not configured");
+  }
+
+  const res = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      from: "Webixlinks Website <hello@webixlinks.com>",
+      to: [process.env.CONTACT_NOTIFICATION_EMAIL || contactDetails.email],
+      reply_to: replyTo,
+      subject,
+      html,
+    }),
+  });
+
+  if (!res.ok) {
+    const errorText = await res.text();
+    throw new Error(`Resend API error ${res.status}: ${errorText}`);
+  }
 }
 
 export async function POST(request: Request) {
@@ -34,16 +87,12 @@ export async function POST(request: Request) {
     return NextResponse.json({ success: false, error: "Name and email are required" }, { status: 400 });
   }
 
-  if (!process.env.RESEND_API_KEY) {
-    console.error("RESEND_API_KEY is not configured");
-    return NextResponse.json({ success: false, error: "Server not configured" }, { status: 500 });
-  }
-
   const projectTypeLabel =
     projectType === "not-sure"
       ? "Not sure yet"
       : projectTypes.find((t) => t.value === projectType)?.label ?? "Not specified";
 
+  const subject = `New project inquiry from ${name}`;
   const html = `
     <h2>New project inquiry — Webixlinks contact form</h2>
     <p><strong>Name:</strong> ${escapeHtml(name)}</p>
@@ -53,26 +102,18 @@ export async function POST(request: Request) {
     <p><strong>Message:</strong><br/>${escapeHtml(message || "—").replace(/\n/g, "<br/>")}</p>
   `;
 
-  const res = await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      from: "Webixlinks Website <onboarding@resend.dev>",
-      to: [process.env.CONTACT_NOTIFICATION_EMAIL || contactDetails.email],
-      reply_to: email,
-      subject: `New project inquiry from ${name}`,
-      html,
-    }),
-  });
-
-  if (!res.ok) {
-    const errorText = await res.text();
-    console.error("Resend API error:", res.status, errorText);
-    return NextResponse.json({ success: false, error: "Failed to send message" }, { status: 502 });
+  try {
+    await sendViaHostingerSmtp(subject, html, email);
+    return NextResponse.json({ success: true });
+  } catch (smtpError) {
+    console.error("Hostinger SMTP failed, falling back to Resend:", smtpError);
   }
 
-  return NextResponse.json({ success: true });
+  try {
+    await sendViaResend(subject, html, email);
+    return NextResponse.json({ success: true });
+  } catch (resendError) {
+    console.error("Resend fallback also failed:", resendError);
+    return NextResponse.json({ success: false, error: "Failed to send message" }, { status: 502 });
+  }
 }
